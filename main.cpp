@@ -33,6 +33,16 @@ int main() {
     // RELACIONES:
     cout << miPerro->getPropietario()->getEdad() << endl;
 
+    // PARTE 2
+
+    firulais.agregarVeterinario("Batman", 5);
+    cout << "Nombre del veterinario: " <<  firulais.getVeterinario()->getNombre() << endl;
+    cout << "Anios de experiencia de "<< firulais.getVeterinario()->getNombre() << ": " << firulais.getVeterinario()->getAniosExperiencia() << endl;
+
+    //PARTE 3
+
+    Raza *n1Raza = new Raza("Mastin Napolitano", "Italia");
+    Raza *n2Raza = new Raza("Maltes", "Italia");
 
     return 0;
 }

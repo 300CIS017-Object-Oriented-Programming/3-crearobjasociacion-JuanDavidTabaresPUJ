@@ -21,6 +21,7 @@ public:
     }
     void mostrarInfo();
     string getNombre();
+    int getEdad();
     void setNombre(string nombre);
 
 

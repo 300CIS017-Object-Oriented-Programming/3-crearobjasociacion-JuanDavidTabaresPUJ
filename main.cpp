@@ -28,7 +28,11 @@ int main() {
     miPropietario->mostrarInfo(); //Parte 1.6
 
     // ADICIONAL:
-
     miPerro->agregarPropietario("Schwarzenegger", "01100011 00100000 01101101 01100001 01110011 00100000 01101101 01100001 01110011");
+
+    // RELACIONES:
+    cout << miPerro->getPropietario()->getEdad() << endl;
+
+
     return 0;
 }

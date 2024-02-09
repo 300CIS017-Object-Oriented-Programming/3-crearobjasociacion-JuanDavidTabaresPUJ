@@ -25,3 +25,7 @@ void Propietario::mostrarInfo(){ // Parte 1.5
     cout << "ID: " << docIdentidad << endl;
     cout << "edad: " << edad << endl;
 }
+
+int Propietario::getEdad(){
+    return edad;
+}

@@ -37,12 +37,16 @@ int main() {
 
     firulais.agregarVeterinario("Batman", 5);
     cout << "Nombre del veterinario: " <<  firulais.getVeterinario()->getNombre() << endl;
-    cout << "Anios de experiencia de "<< firulais.getVeterinario()->getNombre() << ": " << firulais.getVeterinario()->getAniosExperiencia() << endl;
+    cout << "Anios de experiencia de "<< firulais.getVeterinario()->getNombre() + ": " << firulais.getVeterinario()->getAniosExperiencia() << endl;
 
     //PARTE 3
 
     Raza *n1Raza = new Raza("Mastin Napolitano", "Italia");
     Raza *n2Raza = new Raza("Maltes", "Italia");
+
+    firulais.vincularRaza(n1Raza);
+    cout << "Raza de "<< firulais.getNombre() + ": " << firulais.getRaza_()->getNombre() << endl;
+    cout << "Pais de origen de " << firulais.getNombre() + ": " <<  firulais.getRaza_()->getPaisOrigen() << endl;
 
     return 0;
 }

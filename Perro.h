@@ -20,6 +20,7 @@ private:
     string color;
     Propietario* pPropietario;
     Veterinario* vVeterinario;
+    Raza* rRaza;
 
 public:
     Perro();
@@ -28,12 +29,15 @@ public:
     void ladrar();
     Propietario * getPropietario();
     Veterinario *getVeterinario();
+    Raza *getRaza_();
 
     // Sirve para: Asociar a un objeto de la clase perro con un objeto de la clase propietario, de forma que un objeto de la clase perro se pueda identificar con un objeto de la clase propietario (2 parametros) nombre y docID.
     void agregarPropietario(string nombre, string docIdentidad);
 
     void agregarVeterinario(string nombre, int aniosExperiencia);
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
+    void agregarRaza(string nombre, string paisOrigen);
+    void vincularRaza(Raza *raza);
     void setPropietario(Propietario * pPropietario);
 
 

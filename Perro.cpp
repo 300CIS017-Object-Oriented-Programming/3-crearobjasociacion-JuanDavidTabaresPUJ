@@ -25,6 +25,12 @@ void Perro::agregarPropietario(string nombre, string docIdentidad) {
 void Perro::agregarVeterinario(string nombre, int aniosExperiencia) {
     this->vVeterinario = new Veterinario(nombre, aniosExperiencia);
 }
+void Perro::agregarRaza(std::string nombre, std::string paisOrigen){
+    this->rRaza = new Raza(nombre, paisOrigen);
+}
+void Perro::vincularRaza(Raza *raza){
+    this->rRaza = raza;
+}
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
@@ -33,6 +39,9 @@ Propietario *Perro::getPropietario() {
 }
 Veterinario *Perro::getVeterinario(){
     return this->vVeterinario;
+}
+Raza *Perro::getRaza_(){
+    return this->rRaza;
 }
 
 int Perro::getEdad() {
